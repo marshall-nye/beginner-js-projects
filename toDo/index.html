@@ -1,18 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<HTML>
+<head>
+	<meta charset="utf-8">
+	<title>Morning IT Checklist</title>
+ <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen:400" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+    h1 {
 
-    <title>Todo App</title>
+        font-family: Arial, Helvetica, sans-serif;
+        color: #e68a00;
+        font-size: 28px;
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    }
+    
+    h2 {
 
-  <body>
-    <div id="root"></div>
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000099;
+        font-size: 16px;
 
-    <script src="script.js"></script>
-  </body>
-</html>
+    }
+
+   li {
+		font-size: 14px;
+    color:black
+		border: 0px; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	
+    td {
+		padding: 4px;
+		margin: 0px;
+		border: 0;
+	}
+	
+    th {
+        background: #395870;
+        background: linear-gradient(#49708f, #293f50);
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        vertical-align: middle;
+	}
+
+    tbody tr:nth-child(even) {
+        background: #f0f0f2;
+    }
+
+    #CreationDate {
+
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ff3300;
+        font-size: 12px;
+
+    }
+
+    .StopStatus {
+
+        color: #ff0000;
+    }
+  
+    .RunningStatus {
+
+        color: #008000;
+    }
+</style>
+</head>
+<h1>Daily Sysadmin Checklist</h1>
+<BODY>
+
+<ul id="myUL">
+  <li>Review Audit logs</li>
+  <li>Check application log for warning and error messages for service startup errors, application or database errors and unauthorized application installs</li>
+  <li>Check security log for warning and error messages for invalid logons, unauthorized user creating, opening or deleting files</li>
+  <li>Check system log for warning and error messages for hardware and network failures</li>
+  <li>Check web/database/application logs for warning and error messages</li>
+  <li>Check directory services log on domain controllers</li>
+  <li>Report suspicious activity to IAO</li>
+  <li>Perform/verify daily backup</li>
+  <li>Run and/or verify that a successful backup of system and data files has completed</li>
+  <li>Run and/or verify that a successful backup of Active Directory files has completed on at least one Domain Controller</li>
+  <li>Track/monitor system performance and activity</li>
+  <li>Check for memory usage</li>
+  <li>Check for system paging</li>
+  <li>Check CPU usage</li>
+  <li>Check free hard-drive space</li>
+  <li>Check all drives for adequate free space</li>
+  <li>Take appropriate action as specified by site's Standard Operating Procedures</li>
+  <li>Visually check the equipment for amber lights, alarms, etc. Take appropriate action as specified by site's Standard Operating Procedures</li>
+</ul>
+
+</section>
+<script src="js/main.js"></script>
+</BODY>
+</HTML>
